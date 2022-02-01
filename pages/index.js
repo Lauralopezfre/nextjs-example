@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import FirstPost from './components/Post'
 
 export default function Home() {
   return (
@@ -48,6 +49,14 @@ export default function Home() {
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
+          </a>
+
+          <a
+            className={styles.card}
+          >
+            <h2>First post &rarr;</h2>
+            <p>This is my first post.</p>
+            <FirstPost/>
           </a>
         </div>
       </main>
